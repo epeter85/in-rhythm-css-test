@@ -14,14 +14,21 @@
 
 p {
   font-size: .9em;
-  margin-left: 1em;
-  margin-right: 1em;
+  margin: 0 1em .5em 1em;
 
 }
 
 a {
     text-decoration:none;
     color:#3f3f3f;
+
+}
+
+nav ul{
+    list-style: none;
+    padding:0;
+    display: flex;
+    justify-content: space-between;
 
 }
 
@@ -32,16 +39,8 @@ main {
 
 }
 
-
-nav ul{
-    list-style: none;
-    margin-left: 0;
-    padding:0;
-
-}
-
+/*HEADER SECTION*/
 header {
-
     flex: 0 0 auto;
     height: 40px;
     background-color: #fafafa;
@@ -64,11 +63,11 @@ header h1 {
 }
 
 header nav ul {
-    display: flex;
     align-items: stretch;
-    justify-content: space-between;
     width: 100%;
 }
+
+/*MAIN SECTION*/
 
 .article-header {
     height: 40px;
@@ -86,15 +85,6 @@ header nav ul {
     margin-right:1em;
 }
 
-.article-header ul li:last-child {
-  margin-left: auto;
-  margin-right:0;
-}
-
-.font-tiny {
-  font-size: .8em;
-}
-
 .article-image img {
     width:auto;
 	max-width:100%;
@@ -103,13 +93,9 @@ header nav ul {
 
 article {
     text-align: left;
-
-
 }
 
 article nav ul {
-    display: flex;
-    justify-content: space-between;
     padding: 0 10px;
 }
 
@@ -118,10 +104,7 @@ article nav ul li {
 
 }
 
-article nav ul li:last-child {
-  margin-left: auto;
-  margin-right:0;
-}
+/*FOOTER SECTION*/
 
 footer {
     background-color: #fafafa;
@@ -130,11 +113,20 @@ footer {
     height: 40px;
 }
 
-footer ul{
-    display: flex;
+footer nav ul {
     align-items: stretch;
-    justify-content: space-between;
     margin: 10px 25px;
+}
+
+/*HELPERS*/
+
+.font-tiny {
+  font-size: .8em;
+}
+
+.last-item-right li:last-child {
+  margin-left: auto;
+  margin-right:0;
 }
 
 
